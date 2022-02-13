@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        .navbar {
+            background-color: blue;
+            padding: 7px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .brand {
+            font-size: 25px;
+        }
+
+        .menu {
+            font-size: 20px;
+        }
+
+        footer {
+            background-color: blue;
+            padding: 7px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        #demo img {
+            border: 1px solid rgb(249, 249, 250);
+        }
+
+        #btn {
+            padding: 4px;
+            border: 1px solid rgb(253, 253, 253);
+            color: white;
+            background-color: blue;
+        }
+
+        section {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #list {
+            position: absolute;
+            right: 1%;
+            display: none;
+            transition: ease-in 1s;
+        }
+
+        li {
+            font-size: 13px;
+            background-color: rgb(58, 55, 55);
+            border-bottom: 1px solid black;
+            line-height: 2;
+            color: white;
+            padding: 2px;
+            text-align: center;
+            height: 40px;
+            width: 100px;
+        }
+
+        li:hover {
+            background-color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar" id="nav">
+        <div class="brand">PictureIterator</div>
+        <div class="menu" id="menu">&#8942;
+            <div id="list">
+                <li id="dark">Dark Mode</li>
+                <li id="slide">Slideshow</li>
+                <li id="use">Use as*</li>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div id="demo">
+
+        </div>
+        <button id="btn">Next()</button>
+    </section>
+    <footer id="foot">
+        <p>ProfileIterator Ltd,Copyright &copy; 2017</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>
